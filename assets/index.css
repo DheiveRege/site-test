@@ -1,3 +1,21 @@
+:root {
+    --cor-fundo: #0D1117;
+    --cor-text: #8B949E;
+    --cor-textS: #E6EDF3;
+
+    /* shadows */
+    --cor-sombra: rgba(0, 0, 0, 0.35);
+
+    /* buttons colors mother fucker */
+    --cor-button: #112239;
+    --cor-btn-houver: #132a4a;
+    --cor-button2: rgb(141, 27, 27);
+    --cor-btn2-hover: rgb(164, 32, 32);
+}
+
+/*
+    body
+*/
 body {
     margin: 0;
     min-height: 100vh;
@@ -8,14 +26,68 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background: #111827;
-    color: white;
+    background-color: var(--cor-fundo);
+    color: var(--cor-text);
 }
+
+/*
+    main
+*/
 
 main {
     text-align: center;
 }
 
+/*
+    card
+*/
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 8px;
+
+    background-color: var(--cor-textS);
+
+    box-shadow: 0 8px 20px var(--cor-fundo);
+}
+
+
+.btn-card {
+    padding: 12px 100px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    background-color: var(--cor-button2);
+    color: var(--cor-text);
+
+    box-shadow: 0 4px 10px var(--cor-sombra);
+
+    transition: 0.5s;
+}
+
+.btn-card:hover {
+    background-color: var(--cor-btn2-hover);
+    color: var(--cor-text);
+
+    box-shadow: 0 6px 14px var(--cor-sombra);
+}
+
+/*
+    buttons
+*/
 button {
     padding: 12px 20px;
 
@@ -25,4 +97,16 @@ button {
     font-size: 16px;
 
     cursor: pointer;
+
+    background-color: var(--cor-button);
+    color: var(--cor-text);
+
+    box-shadow: 0 4px 10px var(--cor-sombra);
+
+    transition: 1.5s;
+}
+
+button:hover {
+    background-color: var(--cor-btn-houver);
+    box-shadow: 0 6px 16px var(--cor-sombra);
 }
