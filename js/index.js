@@ -1,18 +1,9 @@
-const botao = document.querySelector("#botao")
+const botao = document.getElementById("botao")
+const card = document.getElementById("card")
+const btn = document.getElementById("btn-card")
 
 botao.addEventListener("click", () => {
-    alert("JavaScript funcionando!")
+    card.classList.toggle("gremio");
+    console.log("LADLAKl");
 })
 
-/*
-
-        <h1>Crash Guardians</h1>
-
-        <p>
-            Esta página está disponível na internet <br>seguindo todas as diretrizes.
-        </p>
-
-        <button id="botao">
-            Clique aqui
-        </button>
-*/ 
